@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Coffee and WiFi Website {% endblock %}
+
+{% block content %}
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" style="background-color: #333">
+    <div class="col-md-6 p-lg-5 mx-auto">
+      <h1 class="display-3 fw-bold">Welcome to the Cafe and WiFi hub! <br>☕💻</h1>
+      <h3 class="fw-normal mb-3"><br> Looking for the best Cafe and Coffee spot to be your most productive self?
+      You've come to the right place!</h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+
+        <a class="btn btn-warning btn-lg" href="{{ url_for('show_cafes') }}" role="button">Show Me The Cafés!</a>
+
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
